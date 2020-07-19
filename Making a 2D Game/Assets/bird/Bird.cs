@@ -7,6 +7,8 @@ public class Bird : MonoBehaviour
     [SerializeField] float launchPower = 500;
     bool birdLaunched;
     float timeSittingAround;
+    [SerializeField] int lives = 5;
+    bool loseLive = false;
 
     private void Awake()
     {
@@ -17,6 +19,13 @@ public class Bird : MonoBehaviour
     {
         GetComponent<LineRenderer>().SetPosition(1, initialPosition);
         GetComponent<LineRenderer>().SetPosition(0, transform.position);
+
+
+        if(lives <= 0)
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
 
 
         if (birdLaunched &&
@@ -46,6 +55,7 @@ public class Bird : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = Color.red;
         GetComponent<LineRenderer>().enabled = true;
+        loseLive = true;
     }
 
     private void OnMouseUp()
@@ -55,12 +65,22 @@ public class Bird : MonoBehaviour
         GetComponent<Rigidbody2D>().AddForce(directionToInitialPosition * launchPower);
         GetComponent<Rigidbody2D>().gravityScale = 1;
         birdLaunched = true;
-        GetComponent<LineRenderer>().enabled = false; 
+        GetComponent<LineRenderer>().enabled = false;
+        loseLife();
     }
 
     private void OnMouseDrag()
     {
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(newPosition.x, newPosition.y);
+    }
+
+    private void loseLife()
+    {
+        if(loseLive)
+        {
+            loseLive = false;
+            lives--;
+        }
     }
 }

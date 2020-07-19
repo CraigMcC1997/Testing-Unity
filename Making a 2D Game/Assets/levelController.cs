@@ -14,17 +14,26 @@ public class levelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(Enemy enemy in enemies)
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("Reloading Game");
+
+            string currentLevelName = "Level" + nextLevelIndex;
+            SceneManager.LoadScene(currentLevelName);
+        }
+
+        Debug.Log("Killed all enemies");
+
+        foreach (Enemy enemy in enemies)
         {
             if (enemy != null)
                 return;
         }
 
-        Debug.Log("Killed all enemies");
+        
         
         nextLevelIndex++;
         string nextLevelName = "Level" + nextLevelIndex;
-
         SceneManager.LoadScene(nextLevelName);
     }
 }
