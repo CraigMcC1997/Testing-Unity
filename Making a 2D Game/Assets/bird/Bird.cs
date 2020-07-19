@@ -31,8 +31,14 @@ public class Bird : MonoBehaviour
             transform.position.x < -10 ||
             timeSittingAround > 3)
         {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            timeSittingAround = 0;
+            transform.position = initialPosition;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            GetComponent<Rigidbody2D>().angularVelocity = 0f;
+
+            //string currentSceneName = SceneManager.GetActiveScene().name;
+            //SceneManager.LoadScene(currentSceneName);
         }  
     }
 

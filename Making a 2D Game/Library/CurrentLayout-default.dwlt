@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 42
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 43
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,19 +338,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Unity\Testing Unity\Testing 2D Stuff\Repo\Making a 2D Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0c3b0000
-    m_LastClickedID: 15116
+    m_SelectedIDs: 003b0000
+    m_LastClickedID: 15104
     m_ExpandedIDs: 00000000003b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0e3b0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7af8ffff88f8ffff96f8ffff04f9ffff12f9ffff20f9ffff32f9ffff4af9ffff58f9ffff66f9ffff5cfbffff
+      m_ExpandedIDs: d6f1ffffe4f1ffff32f2ffff7ef2ffffc0f2ffff02f3ffff10f3ffff1ef3ffff36f3ffff44f3ffff58f3ffff88f3ffff96f3ffffa4f3ffffb2f3ffffc0f3ffff5ef4ffff6afaffff5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.605243, y: 0.29238254, z: -15.857991}
+    m_Target: {x: -1.6595292, y: 0.8016353, z: -3.9160156}
     speed: 2
-    m_Value: {x: 4.609128, y: 0.22404511, z: -15.825195}
+    m_Value: {x: -1.6595292, y: 0.8016353, z: -3.9160156}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +616,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.610981
+    m_Target: 3.9815285
     speed: 2
-    m_Value: 7.2832355
+    m_Value: 3.9815285
   m_Ortho:
     m_Target: 1
     speed: 2
