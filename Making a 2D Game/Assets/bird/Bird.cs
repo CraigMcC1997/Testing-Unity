@@ -37,8 +37,8 @@ public class Bird : MonoBehaviour
         if (transform.position.y > 10 ||
             transform.position.y < -10 ||
             transform.position.x > 10 ||
-            transform.position.x < -10 ||
-            timeSittingAround > 3)
+            transform.position.x < -20 ||
+            timeSittingAround > 2)
         {
             timeSittingAround = 0;
             transform.position = initialPosition;
